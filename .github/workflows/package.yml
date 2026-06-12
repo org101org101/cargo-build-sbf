@@ -26,7 +26,7 @@ jobs:
         run: |
           VERSION=$(./scripts/crate-version.sh Cargo.toml)
 
-          tag="sbf-sdk@v${version}"
+          tag="sbf-sdk@v${VERSION}"
           ref="$(git rev-parse HEAD)"
 
           echo "tag=${tag}" >> "${GITHUB_OUTPUT}"
