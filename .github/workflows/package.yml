@@ -103,8 +103,8 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               tag_name: process.env.TAG,
-              name: `Release ${process.env.TAG}`,
-              generate_release_notes: true,
+              name: `${process.env.TAG}`,
+              generate_release_notes: false,
               draft: false,
               prerelease: false
             })
